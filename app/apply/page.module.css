@@ -1,0 +1,59 @@
+.container {
+  width: 100%;
+  height: 768px;
+  background-color: #121212;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  left: 120px;
+  top: 100px;
+  color: #f7f7f5;
+  font-size: 47px;
+  font-weight: bold;
+}
+
+.tagContainer {
+  position: absolute;
+  left: 120px;
+  top: 181px;
+  display: flex;
+  gap: 20px;
+}
+
+.tag {
+  background-color: #1f1f21;
+  border-radius: 8px;
+  padding: 7px 12px;
+}
+
+.tagText {
+  color: #bdbdbd;
+  font-size: 16px;
+}
+
+.description {
+  position: absolute;
+  left: 120px;
+  top: 252px;
+  color: white;
+  line-height: 44px;
+  font-size: 22px;
+}
+
+.imageWrapper {
+  position: absolute;
+  left: 780px;
+  top: 120px;
+}
+
+.image {
+  width: 300px;
+  height: 303px;
+  object-fit: cover;
+}
+
+.highlightDate {
+  color: #50FF6C;
+}

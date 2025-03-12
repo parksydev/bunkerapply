@@ -1,0 +1,152 @@
+.container {
+  background-color: #121212;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: #F7F7F5;
+  font-size: 47px;
+  margin: 0;
+  padding: 100px 120px 40px;
+}
+
+.description {
+  color: #F7F7F5;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 560px;
+  margin: 0;
+  padding-left: 120px;
+}
+
+.timeline {
+  margin-top: 50px;
+  position: absolute;
+  right: -50px;
+  top: 100px;
+  width: 450px;
+}
+
+@media (max-width: 1200px) {
+  .timeline {
+    right: -100px;
+  }
+
+  .content h3 {
+    font-size: 15px;
+  }
+
+  .content p{
+    font-size: 12px;
+  }
+}
+
+.timelineItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  border: 3.7px solid #50FF6C;
+  border-radius: 50%;
+  margin-right: 26px;
+  flex-shrink: 0;
+  background: transparent;
+}
+
+.timelineItem::after {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 425px;
+  height: 17px;
+  background: #1F1F1F;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.content {
+  color: #F7F7F5;
+  margin-top: -8px;
+}
+
+.content h3 {
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  color: #F7F7F5;
+}
+
+.content p {
+  font-size: 14px;
+  color: rgba(247, 247, 245, 0.6);
+  margin: 4px 0 0;
+}
+
+.applyButton {
+  width: 170px;
+  height: 51px;
+  background-color: #50FF6C;
+  border-radius: 15px;
+  border: none;
+  color: #121212;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 667px;
+  display: flex;
+  background: #1F1F1F;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.navButton {
+  width: 52.5px;
+  height: 51px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navButton:first-child svg {
+  transform: rotate(180deg);
+}
+
+.navButton:hover svg path {
+  stroke: #f7f7f7;
+  transition: stroke 0.2s ease;
+}
+
+.pageIndicator {
+  position: absolute;
+  right: 120px;
+  bottom: 31px;
+  color: #767676;
+  font-size: 14px;
+  padding: 4px 16px;
+  background-color: black;
+  border: 1px solid #767676;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

@@ -1,0 +1,29 @@
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 667px;
+  display: flex;
+  background: #1F1F1F;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.navButton {
+  width: 52.5px;
+  height: 51px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navButton:first-child svg {
+  transform: rotate(180deg);
+}
+
+.navButton:hover svg path {
+  stroke: #f7f7f7;
+  transition: stroke 0.2s ease;
+}

@@ -1,0 +1,87 @@
+.container {
+  background-color: #121212;
+  min-height: 100vh;
+  width: 100%;
+  margin-top: 200px;
+}
+
+.wrapper {
+  padding: 100px 120px;
+  position: relative;
+}
+
+.title {
+  color: #F7F7F5;
+  font-size: 47px;
+  font-weight: semibold;
+  margin-bottom: 40px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.description {
+  max-width: 700px;
+  color: #F7F7F5;
+  line-height: 132%;
+  font-size: 20px;
+  white-space: pre-line;
+}
+
+.highlight {
+  color: #50FF6C;
+}
+
+.applyButton {
+  width: 170px;
+  height: 51px;
+  background-color: #50FF6C;
+  border-radius: 15px;
+  border: none;
+  color: #121212;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 667px;
+  display: flex;
+  background: #1F1F1F;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.navButton {
+  width: 52.5px;
+  height: 51px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navButton:first-child svg {
+  transform: rotate(180deg);
+}
+
+.navButton:hover svg path {
+  stroke: #f7f7f7;
+  transition: stroke 0.2s ease;
+}
+
+.imageBox {
+  flex-shrink: 0;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

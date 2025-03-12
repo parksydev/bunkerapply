@@ -1,5 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from 'next/link';
+import BunkerIs from "./bunkeris/Bunkeris";
+import Plan from "./plan/Plan";
+import Advantage from "./advantage/Advantage";
+import Apply from "./apply/Apply";
+import Lastpage from "./lastpage/Lastpage";
+
 
 export default function Home() {
   return (
@@ -10,8 +17,8 @@ export default function Home() {
           <Image 
             src="/shape1.png"
             alt="Bunker logo"
-            width={140}
-            height={141}
+            width={145}
+            height={146}
             priority
           />
         </div>
@@ -19,9 +26,9 @@ export default function Home() {
         <h1 className={styles.title}>Bunker</h1>
         <p className={styles.subtitle}>웹과 앱, 협업을 통해 개발을 배우는 동아리</p>
 
-        <a href="t.me/idrewha" className={styles.button}>
+        <Link href="/bunkeris" className={styles.button}>
           시작하기 ↗
-        </a>
+        </Link>
 
         <div className={styles.links}>
           <div className={styles.linkGroup}>
@@ -75,6 +82,16 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <BunkerIs id="bunkerIs" />
+
+        <Plan id="plan" />
+
+        <Advantage id="advantage" />
+
+        <Apply id="apply" />
+
+        <Lastpage id="lastpage" />
       </main>
     </div>
   );
