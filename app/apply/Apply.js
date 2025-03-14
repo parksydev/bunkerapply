@@ -12,12 +12,12 @@ export default function Apply() {
       <div className={styles.tagContainer}>
         <div className={styles.tag}>
           <span className={styles.tagText}>
-            <span className={styles.highlightDate}>3월 12일</span> 까지 접수
+            <span className={styles.highlightDate}>3월 16일</span> 까지 접수
           </span>
         </div>
         <div className={styles.tag}>
           <span className={styles.tagText}>
-            <span className={styles.highlightDate}>3월 13일</span> 면접 실시
+            <span className={styles.highlightDate}>3월 17일</span> 면접 실시
           </span>
         </div>
       </div>

@@ -26,7 +26,7 @@ export default function Home() {
         <h1 className={styles.title}>Bunker</h1>
         <p className={styles.subtitle}>웹과 앱, 협업을 통해 개발을 배우는 동아리</p>
 
-        <Link href="/bunkeris" className={styles.button}>
+        <Link href="/" className={styles.button}>
           시작하기 ↗
         </Link>
 
